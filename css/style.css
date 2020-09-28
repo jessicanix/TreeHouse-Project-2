@@ -1,0 +1,221 @@
+/*Base Element Styles*/
+*{
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5em;
+    text-align: center;
+}
+ul{
+    padding-left: 0;
+}
+.main-nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+#main-header{
+    text-align: center;
+    padding-top: 20px;
+    background: linear-gradient( #ffe4e1, transparent 90%),
+                #ffe4e1 url("../images/main-image.jpg") no-repeat center;
+    background-size: cover;
+ 
+}
+img{
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.home-link, 
+.portfolio-link,
+.contact-link,
+.skills-link{
+    display: none;
+}
+
+/*Base Layout Sytles*/
+.name{
+    margin:0;
+    padding-bottom: 10px;
+}
+#main-header,
+.banner{
+    width: 100%;
+    padding-bottom: 25px;
+}
+.banner{
+    color: gray;
+    padding:25px;
+}
+.name,
+.main-nav{
+    text-align: center;
+    display: block;
+}
+li{
+    list-style: none;   
+    padding:10px 25px; 
+    background-color: white;
+    margin: 5px;
+
+}
+.container{
+    padding-bottom: 50px;
+}
+    .portfolio{
+    text-transform: uppercase;
+}
+h2{
+    padding-top: 10px;
+}
+span{
+    text-align: center;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: inline-block;
+}
+.main-footer{
+    font-family: 'Open Sans', sans-serif;
+    background-color: 	#f5f5f5;
+    color: #808080;
+    padding-top: 50px;
+    text-align: center;
+    padding: 25px 25px;
+    line-height: 1.5em;
+}
+.main-footer h4{
+    text-transform: uppercase;
+}
+#contact-info{
+    padding: 25px;
+}
+.tel{
+    font-weight: 600;
+}
+.footer-end{
+    border-top: 1px #808080 solid;
+    padding:25px 0;
+}
+.bottom-name{
+    float: left;
+    font-weight: 600;
+}
+.main-footer a{
+    text-decoration: none;
+    color: #808080;
+    font-weight: 600;
+}
+.bottom-link{
+    text-transform: uppercase;
+    float: right;
+    padding-bottom: 50px;
+    color: #000;
+}
+/*Media Queries for tablet*/
+@media (min-width:768px){
+    #main-header{
+        padding: 50px 0;
+    }
+    li{
+        display: inline;
+        background-color: transparent;
+    }
+    .main-img{
+        float: right;
+        width: 50%;
+        display: inline-block;
+    }
+    .profile-info{
+    float: left;
+    width: 50%;
+    padding-top: 30px;
+    padding-right: 20px;
+    text-align: left;
+    }
+    .marketing,
+    .search,
+    .travel,
+    .spots,
+    .skills,
+    .gallery,
+    .calc{
+        width: 50%;
+        float: left;
+        display: inline-block;
+    }
+    .home-link, 
+    .portfolio-link,
+    .skills-link,
+    .contact-link{
+        display: inline;
+        float: right;
+        margin: 10px;
+    }
+    .bottom-link{
+        display: none;
+    }
+    .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+    }
+} 
+
+/*Media Queries for desktop*/
+@media (min-width:1024px){
+    #main-header{
+        padding: 75px 0;
+    }
+    .name{
+        float: left;
+        background-color: transparent;
+        padding-left: 20px;
+    }
+    .main-nav{
+        float: right;
+        display: inline-block;
+    }
+    .home-link, 
+    .portfolio-link,
+    .skills-link,
+    .contact-link{
+        display: inline;
+        float: right;
+        margin: 10px;
+    }
+    .main-img{
+        float: right;
+        width: 50%;
+        display: inline-block;
+    }
+    .profile-info{
+    float: left;
+    width: 50%;
+    padding: 25px;
+    text-align: left;
+    }
+    .marketing,
+    .search,
+    .travel,
+    .spots,
+    .skills,
+    .gallery,
+    .calc{
+        width: 33%;
+        float: left;
+        display: inline-block;
+    }
+    .bottom-link{
+        display: none;
+    }
+    .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+    }
+} 
